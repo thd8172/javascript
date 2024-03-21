@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제어문</title>
+</head>
+<body>
+    <h1>제어문</h1>
+
+    <script>
+        //제어문 프로그램의 프름을 제어하는 명령
+        /*if(조건)
+        true 인경우 실행
+        }else{
+            false인 경우 실행
+        }  
+        let a (prompt(입력하세요))
+
+        홀수 짝수 - 2로 나눈 나머지가 0이면 짝수 2로 나눈 나머지가 1이면 홀수*/
+        ///문자가 입력되면 숫자가 아님 출력
+        //과제 0은 어떻게 할까?
+        // let input = prompt('입력하세요')
+        // if (input !== null && input !== ''){
+        // if (Boolean(Number(input))){
+        //         if(input % 2 == 0){
+        //     console.log(`${input} : 짝수`);
+        // } else {
+        //      console.log(`${input} : 홀수`);
+        //     }  
+        //  }else{
+        // console.log('숫자 데이터가 아님');
+        // }
+        //  }else{
+        //       console.log('입력취소');
+        //      }
+
+    /* 국어, 영어 수학 점수 입력  평균을 구하고
+     평균을 이용해서 
+     수 우 마 영 거 츌력*/
+80
+    // let ko = Number(prompt('국어 점수를 입력하세요'))
+    // let en = Number(prompt('영어 점수를 입력하세요'))
+    // let su = Number(prompt('수학 점수를 입력하세요'))
+    // let pun = (ko + su + en)/3;
+        
+        // if( pun  >= 90){
+        //     glade ='수'
+        // }else if(pun  >= 80){
+        //     glade ='우' 
+        // }else if (pun  >= 70){
+        //     glade ='마'
+        // }else if(pun >= 60){
+        //     glade ='영'
+        // }else{
+        //     glade ='가'
+        // }
+        // console.log (`평균 :${pun} => ${glade}`)
+
+        /*swich문 : 조건이 많을 경우 사용
+            수를 7로 나눈 나머지 : 0 : 일요일 ~ 6 : 토요알 */
+
+        // let snum = Number(prompt('입력'))
+        // let week ='';
+        // switch(snum % 7){
+        //     case 0: week = '일';  break;
+        //     case 1: week = '월'; break;
+        //     case 2: week = '화'; break;
+        //     case 3: week = '수'; break;
+        //     case 4: week = '목';  break;
+        //     case 5: week = '금'; break;
+        //     case 6: week = '토'; break;
+        //     default : week = '숫자 아님';
+            
+        // }
+        // console.log(`${snum % 7} => ${week}요일`);
+
+        //평균 값에 따라 수~가 출력
+        //swich 문으로 사용
+        //Math.floo(2.51512) => 2
+
+        // let suhak = Number(prompt('수학'))
+        // let korea = Number(prompt('국어'))
+        // let engli = Number(prompt('영어'))
+        // let pung = (suhak + korea + engli)/3;
+        //  avg = Math.floor(pung/10);
+        // let weer = '';
+        
+        // switch(avg % 10){
+        //     case 9 : weer = '수'; break;
+        //     case 8 : weer = '우'; break; 
+        //     case 7 : weer = '마'; break; 
+        //     case 6 : weer = '영'; break; 
+        //     default :  weer = '가';  
+        // }
+        // console.log(`${avg} => ${weer}등급 입니다`)
+        
+
+        //삼항 연산자  ? true : false 
+        // 나이 입력 - 18세 이상  o 판매가능 x판매 불가 콘솔 창에 출력
+        
+        let age = Number(prompt("나이 입력"));
+        (age >= 18) ? console.log(age +' 살 판매가능'):console.log(`${age}살 판매 불가`);
+
+    </script>
+</body>
+</html>
