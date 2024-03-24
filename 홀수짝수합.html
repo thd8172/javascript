@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀짝합</title>
+</head>
+<body>
+    <script>
+        //1부터 100까지의 홀수개수와 짝수개수를 업로드하고
+        //1부터 100까지의 홀수 숫자를 업로드한다
+            let num = 0;
+            let rum = 0;
+            let sum = '';
+            let hum = '';
+            for(i = 1; i <= 100; i++){
+              if(i % 2== 0){
+                  num ++
+                  sum += `${i}, `
+              }else{
+                  rum++
+                  hum +=`${i},`
+      
+              }
+            }
+            console.log(`짝수에 합은 ${num} 입니다 `)
+            console.log(`짝수에 개수는은 ${sum} 입니다 `)
+            console.log(`홀수에 합은 ${rum} 입니다 `)
+            console.log(`홀수에 개수는은 ${hum} 입니다 `)
+          </script>
+</body>
+</html>
