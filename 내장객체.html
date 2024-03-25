@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장객체</title>
+</head>
+<body>
+    <h1>내장객체</h1>
+    <script>
+        //내장객체: 미리 만들어진 객체
+        //Math 객체 : 수학 관련 객체 , 인스턴스 생선하지는 않고 사용
+
+        //로또번호 만들기 
+        let lotto= '';
+        for(let i = 1; i<=5 ; i++){
+            for(let j = 1; j <=6;j++){
+                
+          let rm = Math.floor(Math.random() * 45 + 1)
+          //중복데이터면 번호 연결
+          if(lotto.indexOf(num) == -1){
+            push(num)
+          }else{
+            j--;
+          }
+          lotto += rm +'\t'
+            }
+           //변수에 줄바꿈
+           let looto
+        lotto += '\n'
+    }
+    console.log(lotto)
+    </script>    
+</body>
+</html>
